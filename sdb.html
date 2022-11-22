@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>San Diego Bud&#333;kan</title>
+<meta name="description" content="The San Diego Budo&#333;kan teaches the japanese martial traditions of kenjutsu and aikijutsu" />
+<link rel="stylesheet" href="css/animate.css" />
+<style>
+     
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: arial; 
+    }
+
+    a.link {
+        text-decoration: underline;
+        color: maroon;
+        cursor: pointer;
+    }
+
+    a.link:hover {
+        color: red;
+    }
+
+    .section {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        min-height: 150px;
+    }
+    
+    #header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff; 
+        margin: 0;
+        padding: 0;
+        -webkit-box-shadow: 0 4px 6px -6px #222;
+        -moz-box-shadow: 0 4px 6px -6px #222;
+        box-shadow: 0 4px 6px -6px #333;
+    }
+
+    #content {
+        position: relative;
+        overflow-y: scroll;
+        height: calc(100vh - 75px);
+        width: 100%;
+    }
+
+    #footer {
+        position: relative;
+        bottom: 0;
+        height: 30px;
+    }
+
+    .nav {
+        overflow: hidden;
+    }
+
+    .nav a {
+        float: left;
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .nav .icon {
+        display: none;
+    }
+
+
+
+    #copyright {
+        position: absolute;
+        bottom: 25px;
+    }
+
+    img {
+        margin: 5px 0px;
+        border-radius: 5px;
+    }
+
+    .blur-box {
+        background-color: #aaa;
+        /* box-shadow: 0 0 1px 3px #aaa; */
+        border: 1px solid #aaa;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    sup {
+        font-size: xx-small;
+    }
+
+    table {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    td {
+        vertical-align: top;
+    }
+
+    p {
+        line-height: 1.5;
+        text-align: justify;
+        text-justify: inter-word;  
+    }
+
+    .section ul li {
+        line-height: 1.5;
+        padding-bottom: 1em;
+    }
+
+    #images div {
+        text-align: center;
+    }
+
+    #images img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 800px) {
+        table {
+            width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .nav a:not(:first-child) {
+            display: none;
+        }
+        .nav .icon {
+            float: right;
+            display: block;
+        }
+        .nav.responsive {
+            position: relative;
+        }
+        .nav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        table {
+            width: 100%;
+        }
+    }
+    
+</style>
+</head>
+
+<body>
+    <div id="header" class="header">
+        <div id="nav" class="nav">
+            <a class="icon" onclick="addResponsive()">&#9776;</a>
+            <a class="link" onclick="scrollToElement('about');">About</a>
+            <a class="link" onclick="scrollToElement('traditions');">Our Traditions</a>
+            <a class="link" onclick="scrollToElement('schedule');">Schedule</a>
+            <a class="link" onclick="scrollToElement('membership');">Membership</a>
+            <a class="link" onclick="scrollToElement('contact');">Contact</a>
+        </div>
+    </div>
+    <div id="content" class="content">
+
+        <div id="welcome" class="section">
+            <h1>San Diego Bud&#333;kan</h1>
+            <h2>Japanese Martial Traditions since 1968</h2>
+            <p>
+                <img src="images/_MG_0879.jpg" width="100%" class="blur-box"/>
+            </p>
+            </div>
+        <div id="about" class="section">
+            <h1>About the San Diego Bud&#333;kan</h1>
+            <p>
+                San Diego Bud&#333;kan first opened its doors in 1968.  In the five decades since it's founding hundreds of 
+                men and women have crossed the threshold of the d&#333;j&#333; and been transformed by the powerful teachings.  
+                The traditions we study are not mere shells or archaic relics, but powerful living traditions that focus the 
+                spirit and sharpen the mind.  Our goal as disciples of these traditions is to penetrate to the core of 
+                conflict and strategy, and to emerge with the capability to act instantly and decisively with what is precisely 
+                required by the situation.  
+            </p>
+            <p>
+                We study two Japanese traditions: Itt&#333; Tenshin-ry&#363;<sup>&#174;</sup> Kenjutsu and Yamate-ry&#363;<sup>&#174;</sup> Aikijutsu. 
+                These traditions require strict discipline and formality, and their study is a life-long endeavor.  Students are 
+                expected to train a minimum of two times a week, are required to wear a training uniform, and will need to purchase
+                the appropriate weapons and training tools. 
+            </p>
+            <p>
+                We additionally offer a no gi jujutsu class.  This is <u>not</u> Brazilian jiu-jitsu.  The no gi jujutsu class 
+                exposes students to small subset of very practical teachings from the Japanese traditions. Class focuses 
+                on building conditioned responses to stressful and dangerous situations. Students dress in every day clothes
+                and class will include drills to develop balance, sensitivity, and awareness. Students will practice 
+                realistic scenarios and learn to act decisively, with intention and ferocity.  
+            </p>
+        </div>
+        <div id="traditions" class="section">
+            <h1>Our Traditions</h1>
+            <div>
+                <h2>Itt&#333; Tenshin-ry&#363;<sup>&#174;</sup></h2>
+                <div class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1s"><img src="images/shodo-tneshin-ryu3-89x300.png" style="float: right; margin-left: 20px;"/></div> 
+                <p>
+                    Itt&#333; Tenshin-ry&#363; was founded by Kurosawa Kojiro (circa 1900) and brought to the United States 
+                    in the 1960s by the third-generation headmaster, Mr. Fredrick Lovret. The current headmaster is Mr. Arvind Rajguru. 
+                    By the time the Itt&#333; Tenshin-ry&#363; was created, the major wars leading to the unification of Japan had 
+                    been over for almost three hundred years. In keeping with the times, the techniques of the style were oriented more 
+                    toward personal combat than mass engagements. The history of the Itt&#333; Tenshin-ry&#333; is not well documented 
+                    prior to the founder of the tradition, or the wellspring of his training. According to our oral traditions, the heart 
+                    of the art descends from the Itt&#333;-ryu through the Tenshin Itt&#333;-ry&#333;.
+                </p>
+                <p>
+                    The purpose of the Itt&#333; Tenshin-ry&#333; is not to perpetuate a set of physical techniques or to preserve an archaic method of 
+                    combat, but to develop a powerful and orderly being. Our methodology of training is short, simple techniques combined 
+                    with vigorous training.
+                </p>
+                <p>
+                    Four Essential Principles of the Itto Tenshin-ryu:
+                </p>
+                <ul>
+                    <li>Techniques are to be done in a natural and fluid manner.</li>
+                    <li>Techniques shall be large and open. Small techniques are for small spirits.</li>
+                    <li>The development of a powerful and orderly being is of primary importance.</li>
+                    <li>There is no defense; only attack, Attack, ATTACK!</li>
+                </ul>
+            </div>
+            
+            <h2>Yamate-ry&#363;<sup>&#174;</sup></h2>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/shodo-yamate-ryu3-88x300(1).png" style="float: right; margin-left: 20px;"/></div>
+            <p>
+                The Yamate-ry&#363; began as a family martial art. It is a direct descendant of the Daito-ry&#363; and remains oriented 
+                toward its original purpose.
+            </p>
+            <p>
+                In the early years of the twentieth century, Takeda Sogaku, a master swordsman of the Ono-ha Itto-ryu, was teaching his 
+                family art, the Daito-ryu, to certain influential people in northern Japan. Takeda never had a dojo; he traveled from 
+                place to place giving seminars. Some of these seminars were for individuals, others were to the hand-to-hand combat 
+                instructors of police departments and military organizations, who later taught the art to members of their units. During 
+                this period, he served as an instructor to the 2nd Sendai Army Regiment in north-eastern Honshu.
+            </p>
+            <p>
+                Yamada Taro was among Takeda’s many students. After his Army days, Yamada continued his practice and taught his art, 
+                now known as the Yamate-ry&#363;, to family and close business associates.
+            </p>
+            <p>
+                Fredrick J. Lovret introduced the Yamate-ry&#363; to the United States in 1968, when he founded the San Diego Bud&#333;kan. 
+                The first public seminar was held in 1973.
+            </p>
+            </p>
+        </div>
+        <div id="schedule" class="section">
+            <h1>Schedule</h1>
+            <p>
+                Classes are held Tuesday and Thursday evenings, Saturday mornings, and Sunday afternoon. Tuesday 
+                and Saturday classes are held at a private dojo in Poway.  Thursday evening and 
+                Sunday afternoon classes
+                are held in La Mesa. Please <span class="link" onclick="scrollToElement('contact')">contact us</span> to attend a class.
+            </p>
+            <p>
+                Class starts promptly.  It is customary to arrive 15-30 minutes early to change and warm up.
+            </p>
+            <table>
+                <tr>
+                    <td rowspan="2">Tuesday</td><td rowspan="2">Poway</td><td>6:00pm</td><td>Kenjutsu</td>
+                </tr>
+                <tr>
+                    <td>7:30pm</td><td>Aikijutsu</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Thursday</td><td rowspan="2">La Mesa</td><td>7:30pm</td><td>Kenjutsu</td>
+                </tr>
+                <tr>
+                    <td>8:30pm</td><td>Aikijutsu</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Saturday</td><td rowspan="2">Poway</td><td>9:30am</td><td>Kenjutsu</td>
+                </tr>
+                <tr>
+                    <td>11:00am</td><td>Aikijutsu</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td><td>La Mesa</td><td>3:00pm</td><td>No Gi Jujutsu</td>
+                </tr>
+            </table> 
+        </div>
+        <div id="membership" class="section">
+            <h1>Membership</h1>
+            <p>
+                There are no contracts and we do not take credit cards.  Membership with our dojo is a personal choice
+                and a commitment to embark on a transformational journey.  That said, the dojo does suggest a 
+                noshi of $20/class or $80/month to sustain itself.  If you continue the journey and become a senior member
+                of the dojo, the financial obligations to the ryu will increase.  
+            </p>
+        </div>
+        <div id="contact" class="section">
+            <h1>Contact</h1>
+            <p>
+                Please text <a href="tel:">(xxx) xxx-xxxx</a> to attend a class.   
+            </p>
+            <p>
+                Training in Poway is held at a private dojo.  The address will be provided upon request.  
+            </p>
+            <p>
+                Training in La Mesa is held at Visionary Dance Theatre Studio B, <span>8677 La Mesa Blvd, La Mesa, CA 91942</span>
+            </p>
+        </div>
+
+        <div id="images" class="section">
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/_MG_0519.jpg" class="blur-box"/>
+            </div>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/_MG_0542.jpg" class="blur-box"/>
+            </div>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/IMG_0481.jpg" class="blur-box"/>
+            </div>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/IMG_0767.jpg" class="blur-box"/>
+            </div>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/IMG_6288.jpg" class="blur-box"/>
+            </div>
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/IMG_6407.jpg" class="blur-box"/>
+            </div> 
+            <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="images/IMG_6437.jpg" class="blur-box"/>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div id="copyright">Copyright 2022 San Diego Budokan</div>
+        </div>
+    </div>
+    <script src="js/wow.min.js"></script>
+    <script>
+        function scrollToElement(id) {
+            document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //0, 100); //{top: 100, left: 0, behavior: "smooth"});
+        }             
+        function addResponsive() {
+            var nav = document.getElementById("nav");
+            if (nav.className === "nav") {
+                nav.className += " responsive";
+            } else {
+                nav.className = "nav";
+            }
+            var content = document.getElementById("content");
+            console.log(nav.clientHeight);
+            content.style.setProperty('height', `calc(100vh - ${nav.clientHeight})`);
+            content.style.setProperty('top', nav.clientHeight);
+        }
+        new WOW().init();      
+    </script>
+
+
+</body>
+
+</html>
