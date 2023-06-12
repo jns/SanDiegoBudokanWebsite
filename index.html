@@ -1,225 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>San Diego Bud&#333;kan</title>
+<title>San Diego Bud&#333;kan - Traditional Martial Arts</title>
 <meta name="description" content="The San Diego Budo&#333;kan teaches the japanese martial traditions of kenjutsu and aikijutsu" />
 <meta name="viewport" content="width=device-width" />
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
-
-<style>
-     
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    }
-
-    a.link {
-        text-decoration: underline;
-        color: maroon;
-        cursor: pointer;
-    }
-
-    a.link:hover {
-        color: red;
-    }
-
-    .section {
-        scroll-margin-top: 80px;
-        position: relative;
-        margin: 0 auto;
-        width: 80%;
-        min-height: 150px;
-    }
-    
-    #header {
-        position: sticky;
-        z-index: 99;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: #fff; 
-        margin: 0;
-        padding: 0;
-        -webkit-box-shadow: 0 4px 6px -6px #222;
-        -moz-box-shadow: 0 4px 6px -6px #222;
-        box-shadow: 0 4px 6px -6px #333;
-    }
-
-    #content {
-        position: relative;
-        width: 100%;
-    }
-
-    #footer {
-        position: relative;
-        bottom: 0;
-        height: 30px;
-    }
-
-    #logo { 
-        text-align: center;
-    }
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .nav .links {
-        z-index: 200;
-    }
-
-    .nav a {
-        float: left;
-        display: block;
-        color: #000;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
-
-    .nav .icon {
-        display: none;
-    }
-
-
-
-    #copyright {
-        position: absolute;
-        bottom: 25px;
-    }
-
-    .nav .logo {
-        position: relative;
-        width: 30px;
-        margin-left: 25px;
-        margin-right: 10px;
-    }
-
-    img {
-        margin: 5px 0px;
-        border-radius: 5px;
-    }
-
-    .blur-box {
-        background-color: #aaa;
-        border: 1px solid #aaa;
-    }
-
-    h2 {
-        text-align: center;
-    }
-
-    sup {
-        font-size: xx-small;
-    }
-
-    table {
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    td {
-        vertical-align: top;
-    }
-
-    p {
-        line-height: 1.5;
-        text-align: justify;
-        text-justify: inter-word;  
-    }
-
-    .section ul li {
-        line-height: 1.5;
-        padding-bottom: 1em;
-    }
-
-    #images div {
-        text-align: center;
-    }
-
-    #images img {
-        width: 60%;
-        margin-bottom: 20px;
-    }
-
-    
-    @media (max-width: 700px) {
-
-        .nav {
-            display: block;
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico"></head>
+<link rel="stylesheet" href="index.css" />
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsOrganization",
+      "name": " San Diego Budokan",
+      "sport": "Martial Arts",
+      "areaServed": "San Diego, CA",
+      "keywords": "Budo,Koryu,Aikijutsu,Kenjutsu,Aikido,Jujutsu,jiu-jitsu,swordsmanship",
+      "memberOf": [
+        {
+            "@type": "SportsOrganization",
+            "name": "Yamate-ryu"
+        },
+        {
+            "@type": "SportsOrganization",
+            "name": "Itto tenshin-ryu"
         }
-
-        .nav .logo {
-            position: absolute;
-            width: 50%;
-            top: 0;
-            left: 25%;
-            text-align: center;
-            margin: 0;
-        }
-
-        .nav .links a:nth-child(n+2) {
-            display: none;
-        }
-        .nav .icon {
-            float: right;
-            display: block;
-        }
-        .nav.responsive .links {
-            position: relative;
-        }
-        .nav.responsive .links a.icon {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        .nav.responsive .links a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-
-        table {
-            width: 100%;
-        }
+      ]
     }
-    
-</style>
-</head>
-
+    </script>
 <body>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="sdb.js"></script>
     <script>
-        function scrollToElement(id) {
-            document.getElementById(id).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //0, 100); //{top: 100, left: 0, behavior: "smooth"});
-        }             
-        function addResponsive() {
-            var nav = document.getElementById("nav");
-            if (nav.className === "nav") {
-                nav.className += " responsive";
-            } else {
-                nav.className = "nav";
-            }
-            var sections = document.getElementsByClassName("section");
-            for(var i = 0; i < sections.length; i++) {
-                element = sections.item(i);
-                if (element.className === "section") {
-                    element.className += " responsive";
-                    element.setAttribute('style', `scroll-margin-top: ${nav.clientHeight}px`);
-                } else {
-                    element.className = "section";
-                    element.removeAttribute('style');
-                }
-            };
-        }
-
         AOS.init();
     </script>
 
@@ -242,7 +53,10 @@
             <h1>San Diego Bud&#333;kan</h1>
             <h2>Japanese Martial Traditions since 1968</h2>
             <p>
-                <img src="images/IMG_0879.jpg" width="100%" class="blur-box"/>
+                <!-- <img src="images/IMG_0879.jpg" width="100%" class="blur-box"/> -->
+                <a href="https://heiho.org/retreat">
+                    <img src="images/2023Retreat.png" width="100%" class="blur-box" />
+                </a>
             </p>
             </div>
         <div id="about" class="section">
